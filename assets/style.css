@@ -1,0 +1,58 @@
+body{
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fight-area{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.monster{
+    flex:1;
+}
+.name-monster{
+    text-align:end;
+}
+
+.hero{
+    flex:1;
+}
+.hero-image,
+.monster-image{
+  width:150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.monster-image{
+    transform: scaleX(-1);
+    margin-left: auto;
+}
+.hero-image img,
+.monster-image img{
+    width: 100%;
+}
+.hero-life-bar,
+.monster-life-bar{
+    width: 100%;
+    height: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.bar{
+    width: 1%;
+    height: inherit;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.log{
+    border: 1px dotted #999;
+    height: 200px;
+    overflow-y: scroll;
+}
